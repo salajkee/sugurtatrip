@@ -28,9 +28,10 @@ try {
 
 // Выбор тарифа
 try {
+	const date = document.querySelector('.item__date');
+
 	new Datepicker('#multi', {
-		// ranged: true,
-		within: true,
+		ranged: true,
 	});
 } catch (e) {}
 
@@ -73,22 +74,6 @@ try {
 				select.classList.remove('select--active');
 			}
 		});
-	});
-} catch (e) {}
-
-// Datepicker
-try {
-	const date = document.querySelector('.item__date');
-	const datePickerDay = date.querySelector('.datepicker__day');
-
-	if (date.dataset.value) {
-		date.textContent = date.dataset.value;
-	} else {
-		date.textContent = date.dataset.text;
-	}
-
-	datePickerDay.addEventListener('click', e => {
-		console.log(e.target);
 	});
 } catch (e) {}
 
