@@ -1,0 +1,158 @@
+.whyarewe {
+	padding: 60px 0;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 350px auto;
+		gap: 100px;
+	}
+
+	&__title {
+		text-align: left;
+	}
+
+	.tabs {
+		&__menu {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			row-gap: 10px;
+		}
+
+		&__list {
+			padding: 20px;
+			display: flex;
+			align-items: flex-start;
+			column-gap: 10px;
+			border-radius: 10px;
+			background-color: #f6fcfe;
+
+			@media (hover: hover) {
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			&-icon {
+				font-size: 20px;
+			}
+
+			&-text {
+				strong {
+					font-weight: 700;
+					font-size: 16px;
+					color: var(--text);
+				}
+
+				p {
+					margin-top: 5px;
+					font-size: 16px;
+					font-weight: 500;
+					color: var(--text);
+				}
+			}
+
+			&--active {
+				color: var(--white-text);
+				background-color: var(--accent);
+
+				.tabs__list-text {
+					strong {
+						font-weight: 700;
+						font-size: 16px;
+						color: var(--white-text);
+					}
+
+					p {
+						margin-top: 5px;
+						font-size: 16px;
+						font-weight: 500;
+						color: var(--white-text);
+					}
+				}
+			}
+		}
+	}
+
+	&__content {
+		height: 450px;
+		display: block;
+		overflow: hidden;
+		border-radius: 30px;
+		border: 1px solid rgba(#3cbade, 0.3);
+
+		&.hide {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 1170px) {
+	.whyarewe {
+		&__title {
+			text-align: center;
+		}
+
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			row-gap: 50px;
+		}
+
+		.tabs {
+			&__menu {
+				flex-direction: row;
+				justify-content: center;
+				column-gap: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.whyarewe {
+		&__wrapper {
+			row-gap: 30px;
+		}
+
+		.tabs__menu {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.whyarewe {
+		padding: 40px 0;
+
+		&__wrapper {
+			row-gap: 30px;
+		}
+
+		.tabs {
+			&__menu {
+				flex-direction: column;
+			}
+
+			&__list {
+				background-color: #f6fcfe;
+
+				&--active {
+					.tabs__list-text {
+						strong {
+							color: var(--text);
+						}
+
+						p {
+							color: var(--text);
+						}
+					}
+				}
+			}
+		}
+
+		&__right {
+			display: none;
+		}
+	}
+}

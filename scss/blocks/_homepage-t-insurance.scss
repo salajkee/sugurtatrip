@@ -1,0 +1,28 @@
+.t-insurance {
+	padding: 60px 0;
+	background-color: #f6fcfe;
+
+	.container {
+		max-width: 900px;
+	}
+
+	&__text {
+		margin-top: 30px;
+
+		p {
+			display: block;
+			font-size: 16px;
+			color: var(--text);
+
+			&:not(:first-child) {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.t-insurance {
+		padding: 40px 0;
+	}
+}

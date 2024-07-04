@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/swiper-boundle.min.css" />
+		<link rel="stylesheet" href="./css/datepicker.material.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrapper">
+						<a class="header__logo" href="#">
+							<img src="./images/logo.png" alt="logo" />
+						</a>
+						<a class="header__tel" href="tel:+998930430080">
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 18 18"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M14.4184 11.4531L12.5134 11.2356C12.0558 11.1831 11.6059 11.3406 11.2834 11.6631L9.90335 13.0431C7.78085 11.9631 6.04088 10.2306 4.96088 8.10063L6.34838 6.71312C6.67088 6.39062 6.82838 5.94062 6.77588 5.48312L6.55838 3.59312C6.46838 2.83562 5.83088 2.26562 5.06588 2.26562H3.76838C2.92088 2.26562 2.21588 2.97063 2.26838 3.81813C2.66588 10.2231 7.78835 15.3381 14.1858 15.7356C15.0333 15.7881 15.7384 15.0831 15.7384 14.2356V12.9381C15.7459 12.1806 15.1759 11.5431 14.4184 11.4531Z"
+								/>
+							</svg>
+							+998 93 043 00 80
+						</a>
+						<button class="hamburger">
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 32 32"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<rect
+									x="0.5"
+									y="0.5"
+									width="31"
+									height="31"
+									rx="15.5"
+									stroke="black"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.08594 15.9987C8.08594 15.7686 8.27249 15.582 8.5026 15.582H23.5026C23.7327 15.582 23.9193 15.7686 23.9193 15.9987C23.9193 16.2288 23.7327 16.4154 23.5026 16.4154H8.5026C8.27249 16.4154 8.08594 16.2288 8.08594 15.9987Z"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.08594 10.9987C8.08594 10.7686 8.27249 10.582 8.5026 10.582H23.5026C23.7327 10.582 23.9193 10.7686 23.9193 10.9987C23.9193 11.2288 23.7327 11.4154 23.5026 11.4154H8.5026C8.27249 11.4154 8.08594 11.2288 8.08594 10.9987Z"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.08594 20.9987C8.08594 20.7686 8.27249 20.582 8.5026 20.582H23.5026C23.7327 20.582 23.9193 20.7686 23.9193 20.9987C23.9193 21.2288 23.7327 21.4154 23.5026 21.4154H8.5026C8.27249 21.4154 8.08594 21.2288 8.08594 20.9987Z"
+								/>
+							</svg>
+						</button>
+						<div class="header__dropdown dropdown">
+							<ul class="dropdown__list">
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Полезная информация</a></li>
+								<li><a href="#">О компании</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<section class="intro">
+					<div class="container">
+						<h1 class="intro__title">
+							Туристическое <strong>страхование</strong>
+						</h1>
+						<p class="intro__subtitle">
+							Полис за рубеж за 2 минуты на выгодных условиях!
+						</p>
+
+						<div class="intro__form">
+							<div class="intro__form-item item">
+								<label class="item__label" for="country">Страна</label>
+								<div class="select">
+									<div class="select__btn">
+										<span>Выберите страну</span>
+										<svg
+											width="10"
+											height="6"
+											viewBox="0 0 10 6"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M9.19875 0.18438C9.44375 0.42938 9.44375 0.82438 9.19875 1.06938L5.04376 5.2244C4.84876 5.4194 4.53376 5.4194 4.33876 5.2244L0.18375 1.06938C-0.06125 0.82438 -0.06125 0.42938 0.18375 0.18438C0.42875 -0.0606202 0.82375 -0.0606202 1.06875 0.18438L4.69376 3.8044L8.31875 0.17938C8.55875 -0.0606202 8.95875 -0.0606203 9.19875 0.18438Z"
+												fill="#3CBADE"
+											/>
+										</svg>
+									</div>
+									<div class="select__content">
+										<div class="select__content-search">
+											<input type="search" placeholder="Поиск" />
+										</div>
+										<ul class="select__content-options options">
+											<li class="options__item">Турция</li>
+											<li class="options__item">Россия</li>
+											<li class="options__item">ОАЭ</li>
+											<li class="options__item">Тайланд</li>
+											<li class="options__item">Китай</li>
+											<li class="options__item">США</li>
+											<li class="options__item">Все страны шенгена</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="intro__form-item item">
+								<label class="item__label" for="qty-people"
+									>Количество людей</label
+								>
+								<div class="select">
+									<div class="select__btn">
+										<span>Выберите кол-во людей</span>
+										<svg
+											width="10"
+											height="6"
+											viewBox="0 0 10 6"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M9.19875 0.18438C9.44375 0.42938 9.44375 0.82438 9.19875 1.06938L5.04376 5.2244C4.84876 5.4194 4.53376 5.4194 4.33876 5.2244L0.18375 1.06938C-0.06125 0.82438 -0.06125 0.42938 0.18375 0.18438C0.42875 -0.0606202 0.82375 -0.0606202 1.06875 0.18438L4.69376 3.8044L8.31875 0.17938C8.55875 -0.0606202 8.95875 -0.0606203 9.19875 0.18438Z"
+												fill="#3CBADE"
+											/>
+										</svg>
+									</div>
+									<div class="select__content">
+										<div class="select__content-search">
+											<input type="search" placeholder="Поиск" />
+										</div>
+										<ul class="select__content-options options">
+											<li class="options__item">Один человек</li>
+											<li class="options__item">2 человека</li>
+											<li class="options__item">3 человека</li>
+											<li class="options__item">4 человека</li>
+											<li class="options__item">5 человек</li>
+											<li class="options__item">6 человек</li>
+											<li class="options__item">7 человек</li>
+											<li class="options__item">8 человек</li>
+											<li class="options__item">9 человек</li>
+											<li class="options__item">10 человек</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="intro__form-item item">
+								<label class="item__label" for="check-in">Даты поездки</label>
+								<div
+									class="item__date"
+									id="multi"
+									data-text="Когда - Обратно"
+								></div>
+							</div>
+							<a class="intro__form-btn" href="#">Выбрать тариф</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="whyarewe">
+					<div class="container">
+						<div class="whyarewe__wrapper">
+							<div class="whyarewe__left">
+								<h2 class="whyarewe__title title">
+									Почему <br />
+									именно мы?
+								</h2>
+								<div class="whyarewe__tabs">
+									<ul class="tabs__menu">
+										<li class="tabs__list tabs__list--active">
+											<div class="tabs__list-icon">👍</div>
+											<div class="tabs__list-text">
+												<strong>Большой выбор</strong>
+												<p>
+													Лучшие условия страхования от крупнейших страховых
+													компаний
+												</p>
+											</div>
+										</li>
+										<li class="tabs__list">
+											<div class="tabs__list-icon">🕑</div>
+											<div class="tabs__list-text">
+												<strong>Быстрое оформление</strong>
+												<p>
+													Всего пара минут и никаких лишних полей для заполнения
+												</p>
+											</div>
+										</li>
+										<li class="tabs__list">
+											<div class="tabs__list-icon">📧</div>
+											<div class="tabs__list-text">
+												<strong>Полис приходит на почту</strong>
+												<p>
+													Электронный полис, он такой же как бумажный, приходит
+													на электронную почту
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="whyarewe__right">
+								<div class="whyarewe__content tabcontent">
+									<img src="./images/site-img.png" alt="" />
+								</div>
+								<div class="whyarewe__content tabcontent hide">
+									<img
+										src="https://cdn.pixabay.com/photo/2023/12/08/23/46/cat-8438334_1280.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="whyarewe__content tabcontent hide">
+									<img src="./images/site-img.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="blog">
+					<div class="container">
+						<h2 class="blog__title title">Блог</h2>
+						<p class="blog__subtitle">Все самое полезное из мира страхования</p>
+						<div class="blog__slider">
+							<div class="blog__slider-wrapper swiper-wrapper">
+								<div class="blog__slider-slide swiper-slide slide">
+									<div class="slide__img">
+										<img src="./images/blog/img-1.jpg" alt="blog-img" />
+									</div>
+									<div class="slide__title">
+										Что такое страховка для выезжающих за рубеж
+									</div>
+									<div class="slide__descr">
+										<p>
+											Страховка для выезда за границу: зачем она нужна и как ее
+											оформить онлайн. Каждый, кто планирует поездку за границу,
+											должен помнить о том, что страховка для выезжающих за
+											рубеж – это необходимость, а не прихоть.
+										</p>
+									</div>
+									<a class="slide__link" href="#">Продолжить чтение</a>
+								</div>
+								<div class="blog__slider-slide swiper-slide slide">
+									<div class="slide__img">
+										<img src="./images/blog/img-2.png" alt="blog-img" />
+									</div>
+									<div class="slide__title">
+										Зачем нужна страховка путешественника
+									</div>
+									<div class="slide__descr">
+										<p>
+											Страховка путешественника – это важная составляющая вашего
+											путешествия, которую нельзя игнорировать при планировании
+											отдыха или деловой поездки. Как известно, никто не знает,
+											что может произойти в другой стране, и какие медицинские
+											расходы могут внезапно возникнуть.
+										</p>
+									</div>
+									<a class="slide__link" href="#">Продолжить чтение</a>
+								</div>
+								<div class="blog__slider-slide swiper-slide slide">
+									<div class="slide__img">
+										<img src="./images/blog/img-3.jpg" alt="blog-img" />
+									</div>
+									<div class="slide__title">
+										Страховка на визу и шенген: в какие страны нужен полис
+									</div>
+									<div class="slide__descr">
+										<p>
+											Планируете поездку за границу? Тогда вам необходимо знать
+											о страховке на визу и для поездок в зону Шенгена.
+											Страховка на визу — это обязательное условие для получения
+											визы в некоторые страны и защита от возможных
+											неприятностей во время путешествия.
+										</p>
+									</div>
+									<a class="slide__link" href="#">Продолжить чтение</a>
+								</div>
+							</div>
+						</div>
+						<a class="blog__link" href="#">Читать все статьи</a>
+					</div>
+				</section>
+
+				<section class="faq">
+					<div class="container">
+						<h2 class="faq__title title">Остались вопросы?</h2>
+						<p class="faq__subtitle">Наша команда поможет.</p>
+						<ul class="faq__list">
+							<li class="faq__list-item item">
+								<div class="item__head">
+									<h3 class="item__question">Что включено в страховку?</h3>
+									<button class="item__btn">
+										<svg
+											width="28"
+											height="28"
+											viewBox="0 0 28 28"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M1.75 14C1.75 7.23451 7.23451 1.75 14 1.75C20.7655 1.75 26.25 7.23451 26.25 14C26.25 20.7655 20.7655 26.25 14 26.25C7.23451 26.25 1.75 20.7655 1.75 14ZM14 2.91667C7.87884 2.91667 2.91667 7.87884 2.91667 14C2.91667 20.1212 7.87884 25.0833 14 25.0833C20.1212 25.0833 25.0833 20.1212 25.0833 14C25.0833 7.87884 20.1212 2.91667 14 2.91667Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M13.9974 8.75C14.3196 8.75 14.5807 9.01117 14.5807 9.33333V18.6667C14.5807 18.9888 14.3196 19.25 13.9974 19.25C13.6752 19.25 13.4141 18.9888 13.4141 18.6667V9.33333C13.4141 9.01117 13.6752 8.75 13.9974 8.75Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M8.75 14.0013C8.75 13.6791 9.01117 13.418 9.33333 13.418H18.6667C18.9888 13.418 19.25 13.6791 19.25 14.0013C19.25 14.3235 18.9888 14.5846 18.6667 14.5846H9.33333C9.01117 14.5846 8.75 14.3235 8.75 14.0013Z"
+											/>
+										</svg>
+									</button>
+								</div>
+								<div class="item__answer">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Dolore, mollitia quam libero provident voluptates facilis
+									quaerat rem quasi excepturi eos eum iste eligendi blanditiis
+									deserunt nihil, perspiciatis consequatur, quia quibusdam!
+									Laboriosam excepturi voluptatum quos, a modi itaque nisi
+									sapiente. Eveniet deserunt libero qui dolorum cumque et
+									veritatis rem, nobis veniam perspiciatis nihil pariatur quidem
+									odio illum provident aliquid cum. Earum.
+								</div>
+							</li>
+							<li class="faq__list-item item">
+								<div class="item__head">
+									<h3 class="item__question">Что включено в страховку?</h3>
+									<button class="item__btn">
+										<svg
+											width="28"
+											height="28"
+											viewBox="0 0 28 28"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M1.75 14C1.75 7.23451 7.23451 1.75 14 1.75C20.7655 1.75 26.25 7.23451 26.25 14C26.25 20.7655 20.7655 26.25 14 26.25C7.23451 26.25 1.75 20.7655 1.75 14ZM14 2.91667C7.87884 2.91667 2.91667 7.87884 2.91667 14C2.91667 20.1212 7.87884 25.0833 14 25.0833C20.1212 25.0833 25.0833 20.1212 25.0833 14C25.0833 7.87884 20.1212 2.91667 14 2.91667Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M13.9974 8.75C14.3196 8.75 14.5807 9.01117 14.5807 9.33333V18.6667C14.5807 18.9888 14.3196 19.25 13.9974 19.25C13.6752 19.25 13.4141 18.9888 13.4141 18.6667V9.33333C13.4141 9.01117 13.6752 8.75 13.9974 8.75Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M8.75 14.0013C8.75 13.6791 9.01117 13.418 9.33333 13.418H18.6667C18.9888 13.418 19.25 13.6791 19.25 14.0013C19.25 14.3235 18.9888 14.5846 18.6667 14.5846H9.33333C9.01117 14.5846 8.75 14.3235 8.75 14.0013Z"
+											/>
+										</svg>
+									</button>
+								</div>
+								<div class="item__answer">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Dolore, mollitia quam libero provident voluptates facilis
+									quaerat rem quasi excepturi eos eum iste eligendi blanditiis
+									deserunt nihil, perspiciatis consequatur, quia quibusdam!
+									Laboriosam excepturi voluptatum quos, a modi itaque nisi
+									sapiente. Eveniet deserunt libero qui dolorum cumque et
+									veritatis rem, nobis veniam perspiciatis nihil pariatur quidem
+									odio illum provident aliquid cum. Earum.
+								</div>
+							</li>
+							<li class="faq__list-item item">
+								<div class="item__head">
+									<h3 class="item__question">Что включено в страховку?</h3>
+									<button class="item__btn">
+										<svg
+											width="28"
+											height="28"
+											viewBox="0 0 28 28"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M1.75 14C1.75 7.23451 7.23451 1.75 14 1.75C20.7655 1.75 26.25 7.23451 26.25 14C26.25 20.7655 20.7655 26.25 14 26.25C7.23451 26.25 1.75 20.7655 1.75 14ZM14 2.91667C7.87884 2.91667 2.91667 7.87884 2.91667 14C2.91667 20.1212 7.87884 25.0833 14 25.0833C20.1212 25.0833 25.0833 20.1212 25.0833 14C25.0833 7.87884 20.1212 2.91667 14 2.91667Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M13.9974 8.75C14.3196 8.75 14.5807 9.01117 14.5807 9.33333V18.6667C14.5807 18.9888 14.3196 19.25 13.9974 19.25C13.6752 19.25 13.4141 18.9888 13.4141 18.6667V9.33333C13.4141 9.01117 13.6752 8.75 13.9974 8.75Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M8.75 14.0013C8.75 13.6791 9.01117 13.418 9.33333 13.418H18.6667C18.9888 13.418 19.25 13.6791 19.25 14.0013C19.25 14.3235 18.9888 14.5846 18.6667 14.5846H9.33333C9.01117 14.5846 8.75 14.3235 8.75 14.0013Z"
+											/>
+										</svg>
+									</button>
+								</div>
+								<div class="item__answer">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Dolore, mollitia quam libero provident voluptates facilis
+									quaerat rem quasi excepturi eos eum iste eligendi blanditiis
+									deserunt nihil, perspiciatis consequatur, quia quibusdam!
+									Laboriosam excepturi voluptatum quos, a modi itaque nisi
+									sapiente. Eveniet deserunt libero qui dolorum cumque et
+									veritatis rem, nobis veniam perspiciatis nihil pariatur quidem
+									odio illum provident aliquid cum. Earum.
+								</div>
+							</li>
+							<li class="faq__list-item item">
+								<div class="item__head">
+									<h3 class="item__question">Что включено в страховку?</h3>
+									<button class="item__btn">
+										<svg
+											width="28"
+											height="28"
+											viewBox="0 0 28 28"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M1.75 14C1.75 7.23451 7.23451 1.75 14 1.75C20.7655 1.75 26.25 7.23451 26.25 14C26.25 20.7655 20.7655 26.25 14 26.25C7.23451 26.25 1.75 20.7655 1.75 14ZM14 2.91667C7.87884 2.91667 2.91667 7.87884 2.91667 14C2.91667 20.1212 7.87884 25.0833 14 25.0833C20.1212 25.0833 25.0833 20.1212 25.0833 14C25.0833 7.87884 20.1212 2.91667 14 2.91667Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M13.9974 8.75C14.3196 8.75 14.5807 9.01117 14.5807 9.33333V18.6667C14.5807 18.9888 14.3196 19.25 13.9974 19.25C13.6752 19.25 13.4141 18.9888 13.4141 18.6667V9.33333C13.4141 9.01117 13.6752 8.75 13.9974 8.75Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M8.75 14.0013C8.75 13.6791 9.01117 13.418 9.33333 13.418H18.6667C18.9888 13.418 19.25 13.6791 19.25 14.0013C19.25 14.3235 18.9888 14.5846 18.6667 14.5846H9.33333C9.01117 14.5846 8.75 14.3235 8.75 14.0013Z"
+											/>
+										</svg>
+									</button>
+								</div>
+								<div class="item__answer">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Dolore, mollitia quam libero provident voluptates facilis
+									quaerat rem quasi excepturi eos eum iste eligendi blanditiis
+									deserunt nihil, perspiciatis consequatur, quia quibusdam!
+									Laboriosam excepturi voluptatum quos, a modi itaque nisi
+									sapiente. Eveniet deserunt libero qui dolorum cumque et
+									veritatis rem, nobis veniam perspiciatis nihil pariatur quidem
+									odio illum provident aliquid cum. Earum.
+								</div>
+							</li>
+							<li class="faq__list-item item">
+								<div class="item__head">
+									<h3 class="item__question">Что включено в страховку?</h3>
+									<button class="item__btn">
+										<svg
+											width="28"
+											height="28"
+											viewBox="0 0 28 28"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M1.75 14C1.75 7.23451 7.23451 1.75 14 1.75C20.7655 1.75 26.25 7.23451 26.25 14C26.25 20.7655 20.7655 26.25 14 26.25C7.23451 26.25 1.75 20.7655 1.75 14ZM14 2.91667C7.87884 2.91667 2.91667 7.87884 2.91667 14C2.91667 20.1212 7.87884 25.0833 14 25.0833C20.1212 25.0833 25.0833 20.1212 25.0833 14C25.0833 7.87884 20.1212 2.91667 14 2.91667Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M13.9974 8.75C14.3196 8.75 14.5807 9.01117 14.5807 9.33333V18.6667C14.5807 18.9888 14.3196 19.25 13.9974 19.25C13.6752 19.25 13.4141 18.9888 13.4141 18.6667V9.33333C13.4141 9.01117 13.6752 8.75 13.9974 8.75Z"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M8.75 14.0013C8.75 13.6791 9.01117 13.418 9.33333 13.418H18.6667C18.9888 13.418 19.25 13.6791 19.25 14.0013C19.25 14.3235 18.9888 14.5846 18.6667 14.5846H9.33333C9.01117 14.5846 8.75 14.3235 8.75 14.0013Z"
+											/>
+										</svg>
+									</button>
+								</div>
+								<div class="item__answer">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Dolore, mollitia quam libero provident voluptates facilis
+									quaerat rem quasi excepturi eos eum iste eligendi blanditiis
+									deserunt nihil, perspiciatis consequatur, quia quibusdam!
+									Laboriosam excepturi voluptatum quos, a modi itaque nisi
+									sapiente. Eveniet deserunt libero qui dolorum cumque et
+									veritatis rem, nobis veniam perspiciatis nihil pariatur quidem
+									odio illum provident aliquid cum. Earum.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="t-insurance">
+					<div class="container">
+						<h2 class="t-insurance__title title">Туристическая страховка</h2>
+						<div class="t-insurance__text">
+							<p>
+								Туристическая страховка – это неотъемлемый атрибут любого
+								путешествия, особенно, если вы планируете посетить страны с
+								высоким уровнем риска. Но как выбрать подходящую страховку и не
+								потерять время на бумажную волокиту?
+							</p>
+							<p>
+								Наш сервис по покупке туристической страховки является первым на
+								рынке Узбекистана по страхованию туристов и гарантирует
+								максимальный уровень защиты во время вашего путешествия.
+								Страхование туристов – это не просто формальность, - это забота
+								о вашей безопасности и спокойствии в любых условиях.
+							</p>
+							<p>
+								Мы предлагаем широкий выбор туристических страховок на любой
+								вкус и кошелек. От минимального пакета, который покрывает только
+								основные риски, до полного комплекса, который включает в себя
+								медицинскую помощь, страхование багажа и ответственности перед
+								третьими лицами.
+							</p>
+							<p>
+								Кроме того, наш сервис очень удобен в использовании. Вы можете
+								оформить туристическую страховку онлайн, не выходя из дома, и
+								получить полис на электронную почту. Никаких бумажных заявлений
+								и очередей в офисах страховых компаний – все быстро и просто.
+							</p>
+							<p>
+								Актуальность туристической страховки неоспорима. Ведь никто не
+								застрахован от неожиданных ситуаций, которые могут возникнуть во
+								время путешествия. Это может быть болезнь, травма, утеря или
+								кража документов и ценностей. И только правильно оформленная
+								страховка поможет избежать финансовых потерь и сохранить
+								путешествие в приятных воспоминаниях.
+							</p>
+							<p>
+								Страховка для туриста – это залог вашей безопасности и
+								спокойствия в любых условиях. Оформите туристическую страховку
+								на нашем сайте и наслаждайтесь своими приключениями без лишних
+								переживаний.
+							</p>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__item">
+							<div class="footer__item-head">
+								<span>Популярные страны 🔥</span>
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.74078 4.0823C1.45494 4.36813 1.45494 4.82896 1.74078 5.1148L6.58828 9.96233C6.81578 10.1898 7.18327 10.1898 7.41078 9.96233L12.2583 5.1148C12.5441 4.82896 12.5441 4.36813 12.2583 4.0823C11.9724 3.79646 11.5116 3.79646 11.2258 4.0823L6.99661 8.30566L2.76744 4.07646C2.48744 3.79646 2.02078 3.79646 1.74078 4.0823Z"
+									/>
+								</svg>
+							</div>
+							<ul>
+								<li><a href="#">Турция</a></li>
+								<li><a href="#">Россия</a></li>
+								<li><a href="#">ОАЭ</a></li>
+								<li><a href="#">Тайланд</a></li>
+								<li><a href="#">Китай</a></li>
+								<li><a href="#">США</a></li>
+								<li><a href="#">Германия</a></li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<div class="footer__item-head">
+								<span>Другие страны 🌏</span>
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.74078 4.0823C1.45494 4.36813 1.45494 4.82896 1.74078 5.1148L6.58828 9.96233C6.81578 10.1898 7.18327 10.1898 7.41078 9.96233L12.2583 5.1148C12.5441 4.82896 12.5441 4.36813 12.2583 4.0823C11.9724 3.79646 11.5116 3.79646 11.2258 4.0823L6.99661 8.30566L2.76744 4.07646C2.48744 3.79646 2.02078 3.79646 1.74078 4.0823Z"
+									/>
+								</svg>
+							</div>
+							<ul>
+								<li><a href="#">Турция</a></li>
+								<li><a href="#">Россия</a></li>
+								<li><a href="#">ОАЭ</a></li>
+								<li><a href="#">Тайланд</a></li>
+								<li><a href="#">Китай</a></li>
+								<li><a href="#">США</a></li>
+								<li><a href="#">Германия</a></li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<div class="footer__item-head">
+								<span>Опции ⚡</span>
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.74078 4.0823C1.45494 4.36813 1.45494 4.82896 1.74078 5.1148L6.58828 9.96233C6.81578 10.1898 7.18327 10.1898 7.41078 9.96233L12.2583 5.1148C12.5441 4.82896 12.5441 4.36813 12.2583 4.0823C11.9724 3.79646 11.5116 3.79646 11.2258 4.0823L6.99661 8.30566L2.76744 4.07646C2.48744 3.79646 2.02078 3.79646 1.74078 4.0823Z"
+									/>
+								</svg>
+							</div>
+							<ul>
+								<li><a href="#">Страховка детям</a></li>
+								<li><a href="#">Медицинская страховка</a></li>
+								<li><a href="#">Страхование от несчастных случаев</a></li>
+								<li><a href="#">Страхование беременных</a></li>
+								<li><a href="#">Страховка в Шенген</a></li>
+								<li><a href="#">Спорт и активный отдых</a></li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<div class="footer__item-head">
+								<span>Меню 🗒️</span>
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.74078 4.0823C1.45494 4.36813 1.45494 4.82896 1.74078 5.1148L6.58828 9.96233C6.81578 10.1898 7.18327 10.1898 7.41078 9.96233L12.2583 5.1148C12.5441 4.82896 12.5441 4.36813 12.2583 4.0823C11.9724 3.79646 11.5116 3.79646 11.2258 4.0823L6.99661 8.30566L2.76744 4.07646C2.48744 3.79646 2.02078 3.79646 1.74078 4.0823Z"
+									/>
+								</svg>
+							</div>
+							<ul>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Полезная информация</a></li>
+								<li><a href="#">О компании</a></li>
+							</ul>
+						</div>
+						<div class="footer__item">
+							<div class="footer__item-head">
+								<span>Контакты ☎️</span>
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.74078 4.0823C1.45494 4.36813 1.45494 4.82896 1.74078 5.1148L6.58828 9.96233C6.81578 10.1898 7.18327 10.1898 7.41078 9.96233L12.2583 5.1148C12.5441 4.82896 12.5441 4.36813 12.2583 4.0823C11.9724 3.79646 11.5116 3.79646 11.2258 4.0823L6.99661 8.30566L2.76744 4.07646C2.48744 3.79646 2.02078 3.79646 1.74078 4.0823Z"
+									/>
+								</svg>
+							</div>
+							<ul>
+								<li><a href="#">08:00 - 00:00 ПН-ПТ</a></li>
+								<li><a href="#">09:00 - 21:00 СБ-ВС</a></li>
+								<li><a href="tel:+998930430080">+998 93 043 00 80</a></li>
+								<li>
+									<a href="mailto:support@sugurtatrip.uz"
+										>support@sugurtatrip.uz</a
+									>
+								</li>
+								<div class="contacts__socials">
+									<a class="contacts__socials-link" href="#" target="_blank">
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M9.78047 18.6505L10.0605 14.4205L17.7405 7.50046C18.0805 7.19046 17.6705 7.04046 17.2205 7.31046L7.74047 13.3005L3.64047 12.0005C2.76047 11.7505 2.75047 11.1405 3.84047 10.7005L19.8105 4.54046C20.5405 4.21046 21.2405 4.72046 20.9605 5.84046L18.2405 18.6505C18.0505 19.5605 17.5005 19.7805 16.7405 19.3605L12.6005 16.3005L10.6105 18.2305C10.3805 18.4605 10.1905 18.6505 9.78047 18.6505Z"
+												fill="white"
+											/>
+										</svg>
+									</a>
+									<a class="contacts__socials-link" href="#" target="_blank">
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M21.9492 7.88007C21.9023 6.81739 21.7304 6.08681 21.4842 5.45375C21.2302 4.78177 20.8394 4.18015 20.3274 3.68002C19.8272 3.17211 19.2215 2.77744 18.5572 2.52745C17.9203 2.28128 17.1934 2.10943 16.1306 2.06257C15.0597 2.01175 14.7198 2 12.0039 2C9.28799 2 8.94805 2.01175 7.88119 2.05861C6.81831 2.10546 6.08759 2.27746 5.45456 2.52348C4.7823 2.77744 4.18057 3.16814 3.68034 3.68002C3.17233 4.18015 2.77774 4.78574 2.52755 5.44993C2.28133 6.08681 2.10945 6.81342 2.06259 7.8761C2.01175 8.94672 2 9.2866 2 12.002C2 14.7174 2.01175 15.0572 2.05862 16.1239C2.10548 17.1866 2.27751 17.9172 2.52373 18.5502C2.77774 19.2222 3.17233 19.8238 3.68034 20.3239C4.18057 20.8319 4.78627 21.2265 5.45059 21.4765C6.08759 21.7227 6.81434 21.8945 7.87738 21.9414C8.94408 21.9884 9.28418 22 12.0001 22C14.716 22 15.0559 21.9884 16.1228 21.9414C17.1857 21.8945 17.9164 21.7227 18.5494 21.4765C19.8938 20.9569 20.9567 19.8942 21.4764 18.5502C21.7225 17.9133 21.8945 17.1866 21.9414 16.1239C21.9882 15.0572 22 14.7174 22 12.002C22 9.2866 21.996 8.94672 21.9492 7.88007ZM20.1478 16.0458C20.1047 17.0225 19.9406 17.55 19.8039 17.9016C19.4677 18.7729 18.7761 19.4644 17.9046 19.8005C17.5529 19.9372 17.0216 20.1013 16.0484 20.1442C14.9933 20.1912 14.6769 20.2028 12.0079 20.2028C9.33882 20.2028 9.01842 20.1912 7.96714 20.1442C6.99019 20.1013 6.46264 19.9372 6.11094 19.8005C5.67727 19.6402 5.28253 19.3863 4.96212 19.0542C4.62996 18.7298 4.37596 18.3391 4.21568 17.9056C4.0789 17.5539 3.91481 17.0225 3.87191 16.0497C3.8249 14.9948 3.8133 14.6783 3.8133 12.0098C3.8133 9.34124 3.8249 9.02089 3.87191 7.96996C3.91481 6.99321 4.0789 6.46576 4.21568 6.11413C4.37596 5.68039 4.62996 5.28587 4.96609 4.96537C5.29031 4.63327 5.68109 4.37932 6.11491 4.21922C6.46661 4.08247 6.99813 3.91841 7.9711 3.87537C9.0262 3.82852 9.34279 3.81677 12.0117 3.81677C14.6847 3.81677 15.0011 3.82852 16.0524 3.87537C17.0293 3.91841 17.5569 4.08247 17.9086 4.21922C18.3423 4.37932 18.737 4.63327 19.0574 4.96537C19.3896 5.28968 19.6436 5.68039 19.8039 6.11413C19.9406 6.46576 20.1047 6.99702 20.1478 7.96996C20.1946 9.02486 20.2064 9.34124 20.2064 12.0098C20.2064 14.6783 20.1946 14.9909 20.1478 16.0458Z"
+												fill="white"
+											/>
+											<path
+												d="M12 7C9.23963 7 7 9.23948 7 12C7 14.7605 9.23963 17 12 17C14.7605 17 17 14.7605 17 12C17 9.23948 14.7605 7 12 7ZM12 15.2434C10.2092 15.2434 8.75662 13.7909 8.75662 12C8.75662 10.2091 10.2092 8.75662 12 8.75662C13.7909 8.75662 15.2434 10.2091 15.2434 12C15.2434 13.7909 13.7909 15.2434 12 15.2434V15.2434Z"
+												fill="white"
+											/>
+											<path
+												d="M19 6.5C19 7.32835 18.3284 8 17.4999 8C16.6716 8 16 7.32835 16 6.5C16 5.67146 16.6716 5 17.4999 5C18.3284 5 19 5.67146 19 6.5V6.5Z"
+												fill="white"
+											/>
+										</svg>
+									</a>
+								</div>
+							</ul>
+						</div>
+					</div>
+
+					<div class="divier"></div>
+
+					<div class="footer__bot">
+						<div class="footer__copyright">© 2016-2024. Sugurtatrip.uz</div>
+						<a class="footer__agreement" href="#"
+							>Пользовательское соглашение</a
+						>
+						<a class="footer__policy" href="#">Обработка персональных данных</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="./js/datepicker.js"></script>
+		<script src="./js/swiper-boundle.min.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
