@@ -13,14 +13,14 @@
 
 	.tabs {
 		&__menu {
-			margin-top: 50px;
+			margin-top: 30px;
 			display: flex;
 			flex-direction: column;
 			row-gap: 10px;
 		}
 
 		&__list {
-			padding: 20px;
+			padding: 15px 20px;
 			display: flex;
 			align-items: flex-start;
 			column-gap: 10px;
@@ -34,19 +34,19 @@
 			}
 
 			&-icon {
-				font-size: 20px;
+				font-size: 22px;
 			}
 
 			&-text {
 				strong {
-					font-weight: 700;
+					font-weight: 600;
 					font-size: 16px;
 					color: var(--text);
 				}
 
 				p {
 					margin-top: 5px;
-					font-size: 16px;
+					font-size: 14px;
 					font-weight: 500;
 					color: var(--text);
 				}
@@ -58,15 +58,10 @@
 
 				.tabs__list-text {
 					strong {
-						font-weight: 700;
-						font-size: 16px;
 						color: var(--white-text);
 					}
 
 					p {
-						margin-top: 5px;
-						font-size: 16px;
-						font-weight: 500;
 						color: var(--white-text);
 					}
 				}
@@ -78,7 +73,7 @@
 		height: 450px;
 		display: block;
 		overflow: hidden;
-		border-radius: 30px;
+		border-radius: 10px;
 		border: 1px solid rgba(#3cbade, 0.3);
 
 		&.hide {

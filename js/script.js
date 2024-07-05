@@ -26,12 +26,12 @@ try {
 	});
 } catch (e) {}
 
-// Выбор тарифа
+// Выбор даты
 try {
-	const date = document.querySelector('.item__date');
-
-	new Datepicker('#multi', {
-		ranged: true,
+	new AirDatepicker('#multi', {
+		range: true,
+		multipleDatesSeparator: ' - ',
+		minDate: new Date(),
 	});
 } catch (e) {}
 

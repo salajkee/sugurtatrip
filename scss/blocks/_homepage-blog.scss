@@ -22,18 +22,18 @@
 			padding-bottom: 20px;
 			display: flex;
 			flex-direction: column;
-			border-radius: 30px;
+			border-radius: 10px;
 			border: 1px solid rgba(#3cbade, 0.3);
 			overflow: hidden;
 
 			&__img {
-				border-radius: 30px;
+				border-radius: 10px;
 				overflow: hidden;
 			}
 
 			&__title {
 				padding: 20px 20px 10px;
-				font-size: 20px;
+				font-size: 18px;
 				font-weight: 700;
 				color: var(--text);
 			}
@@ -56,10 +56,10 @@
 
 	&__link {
 		width: 200px;
-		height: 60px;
+		height: 50px;
 		margin: 30px auto 0;
 		font-size: 16px;
-		font-weight: 700;
+		font-weight: 600;
 		color: var(--white-text);
 		display: flex;
 		align-items: center;

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="./css/swiper-boundle.min.css" />
-		<link rel="stylesheet" href="./css/datepicker.material.css" />
+		<link rel="stylesheet" href="./css/air-datepicker.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -161,7 +161,13 @@
 							</div>
 							<div class="intro__form-item item">
 								<label class="item__label" for="check-in">Даты поездки</label>
-								<div class="item__date" id="multi">Когда - Обратно</div>
+								<input
+									class="item__date"
+									type="text"
+									id="multi"
+									placeholder="Когда - Обратно"
+									readonly
+								/>
 							</div>
 							<a class="intro__form-btn" href="#">Выбрать тариф</a>
 						</div>
@@ -729,7 +735,7 @@
 			</footer>
 		</div>
 
-		<script src="./js/datepicker.js"></script>
+		<script src="./js/air-datepicker.js"></script>
 		<script src="./js/swiper-boundle.min.js"></script>
 		<script src="./js/script.js"></script>
 	</body>

@@ -21,7 +21,7 @@
 		border-radius: 10px;
 		background-color: var(--accent);
 		position: sticky;
-		z-index: 4;
+		z-index: 3;
 		left: 50%;
 		transform: translateX(-50%);
 		bottom: 50px;
@@ -40,11 +40,14 @@
 
 		.item {
 			padding: 15px;
-			font-size: 16px;
-			font-weight: 700;
-			color: var(--text);
-			border-radius: 20px;
+			border-radius: 10px;
 			border: 1px solid rgba(#3cbade, 0.3);
+
+			&__title {
+				font-size: 16px;
+				font-weight: 600;
+				color: var(--text);
+			}
 
 			&__radio {
 				margin-top: 10px;
@@ -129,7 +132,7 @@
 
 		.item {
 			padding: 15px;
-			border-radius: 20px;
+			border-radius: 10px;
 			border: 1px solid rgba(#3cbade, 0.3);
 
 			&.active {
@@ -164,6 +167,73 @@
 				line-height: 1.5;
 
 				transition: all 0.2s ease-in-out;
+
+				p {
+					margin-top: 15px;
+					font-size: 16px;
+					line-height: 1.6;
+					color: var(--text);
+
+					&:first-child {
+						margin: 0;
+					}
+				}
+
+				h2 {
+					margin-top: 10px;
+					font-size: 20px;
+					font-weight: 700;
+					color: var(--text);
+
+					&:first-child {
+						margin: 0;
+					}
+				}
+
+				h3 {
+					margin-top: 10px;
+					font-size: 18px;
+					font-weight: 700;
+					color: var(--text);
+
+					&:first-child {
+						margin: 0;
+					}
+				}
+
+				ul {
+					margin-top: 10px;
+					padding-left: 20px;
+
+					&:first-child {
+						margin: 0;
+					}
+
+					li {
+						font-size: 16px;
+						line-height: 1.6;
+						color: var(--text);
+						list-style: disc;
+						list-style-type: disc;
+					}
+				}
+
+				ol {
+					margin-top: 10px;
+					padding-left: 20px;
+
+					&:first-child {
+						margin: 0;
+					}
+
+					li {
+						font-size: 16px;
+						line-height: 1.6;
+						color: var(--text);
+						list-style: decimal;
+						list-style-type: decimal;
+					}
+				}
 			}
 
 			&__img {
@@ -172,7 +242,7 @@
 			}
 
 			&__title {
-				font-size: 18px;
+				font-size: 16px;
 				font-weight: 700;
 				color: var(--text);
 			}
@@ -181,7 +251,7 @@
 				margin: 0 auto;
 
 				&-new {
-					font-size: 18px;
+					font-size: 16px;
 					font-weight: 600;
 					color: var(--text);
 				}
@@ -203,12 +273,12 @@
 
 				a {
 					display: block;
-					padding: 10px 20px;
-					border-radius: 10px;
-					font-size: 16px;
-					font-weight: 600;
+					padding: 10px 15px;
+					font-size: 15px;
+					font-weight: 500;
 					color: var(--white-text);
 					text-align: center;
+					border-radius: 5px;
 					border: 1px solid var(--accent);
 					background-color: var(--accent);
 

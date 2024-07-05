@@ -52,6 +52,13 @@ body {
 	}
 }
 
+.air-datepicker {
+	font-family: 'Gilroy', sans-serif;
+	box-shadow: none;
+	border: 1px solid rgba(#3cbade, 0.3);
+	border-radius: 10px;
+}
+
 @import './blocks/header';
 @import './blocks/footer';
 @import './blocks/homepage-intro';

@@ -46,6 +46,7 @@
 			}
 
 			&__question {
+				margin-right: 10px;
 				font-size: 22px;
 				font-weight: 600;
 				color: var(--text);
@@ -57,6 +58,8 @@
 				margin-left: auto;
 				width: 28px;
 				height: 28px;
+				min-width: 28px;
+				min-height: 28px;
 				pointer-events: none;
 				transition: all 0.2s linear;
 
@@ -81,5 +84,9 @@
 @media (max-width: 768px) {
 	.faq {
 		padding: 40px 0;
+
+		&__list .item__question {
+			font-size: 18px;
+		}
 	}
 }

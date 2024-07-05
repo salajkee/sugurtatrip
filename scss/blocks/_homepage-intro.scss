@@ -27,7 +27,7 @@
 		display: grid;
 		grid-template-columns: repeat(4, 254px);
 		border: 1px solid rgba(#3cbade, 0.3);
-		border-radius: 20px;
+		border-radius: 10px;
 		background-color: #f6fcfe;
 		position: relative;
 		z-index: 2;
@@ -66,6 +66,11 @@
 					background-color: var(--white);
 					cursor: pointer;
 					user-select: none;
+
+					span {
+						font-size: 16px;
+						color: var(--text);
+					}
 				}
 
 				&__content {
@@ -124,14 +129,21 @@
 
 			&__date {
 				width: 100%;
-				height: 100%;
+				height: 60px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				font-size: 16px;
+				color: var(--text);
+				text-align: center;
 				border: 1px solid rgba(#3cbade, 0.3);
 				border-left: none;
 				border-right: none;
 				background-color: var(--white);
+
+				&::placeholder {
+					color: var(--text);
+				}
 			}
 
 			.datepicker {
@@ -212,7 +224,7 @@
 			justify-content: center;
 			height: 60px;
 			font-size: 16px;
-			font-weight: 700;
+			font-weight: 600;
 			color: var(--white-text);
 			border-top-right-radius: 10px;
 			border-bottom-right-radius: 10px;
@@ -220,36 +232,6 @@
 		}
 	}
 }
-
-// @media (max-width: 1170px) {
-// 	.intro {
-// 		padding: 75px 0 60px;
-
-// 		&__form {
-// 			max-width: 608px;
-// 			padding: 30px 50px;
-// 			grid-template-columns: repeat(2, 254px);
-// 			row-gap: 20px;
-
-// 			.item {
-// 				&:nth-child(2) {
-// 					.select__btn {
-// 						border-radius: 10px;
-// 						border-top-left-radius: 0;
-// 						border-bottom-left-radius: 0;
-// 						border-right: 1px solid rgba(#3cbade, 0.3);
-// 					}
-// 				}
-
-// 				&__date {
-// 					border: 1px solid rgba(#3cbade, 0.3);
-// 					border-top-left-radius: 10px;
-// 					border-bottom-left-radius: 10px;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
 
 @media (max-width: 1146px) {
 	.intro {
@@ -307,7 +289,22 @@
 
 		&__form {
 			margin: 20px auto 0;
-			padding: 30px;
+			padding: 25px 15px;
+			row-gap: 15px;
+
+			.item {
+				.select__btn {
+					height: 50px;
+				}
+
+				&__date {
+					height: 50px;
+				}
+			}
+
+			&-btn {
+				height: 50px;
+			}
 		}
 	}
 }
